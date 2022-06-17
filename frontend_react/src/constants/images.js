@@ -20,6 +20,7 @@ import vue from "../assets/vue.png";
 import ruby from "../assets/ruby.png";
 import rails from "../assets/rails.png";
 import mongo from "../assets/mongodb.png";
+import self from "../assets/self.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -39,6 +40,7 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
 const images = {
+	self,
 	email,
 	mobile,
 	api,

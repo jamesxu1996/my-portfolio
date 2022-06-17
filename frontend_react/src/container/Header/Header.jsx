@@ -28,6 +28,18 @@ const Header = () => (
 					<div style={{ marginLeft: 20 }}>
 						<p className="p-text">Hello, I am</p>
 						<h1 className="head-text">James Xu</h1>
+						<div>
+							<motion.div
+								whileInView={{ opacity: [0, 1] }}
+								transition={{
+									duration: 0.5,
+									delayChildren: 0.5,
+								}}
+								className="app__header-img"
+							>
+								<img src={images.self} alt="self_bg" />
+							</motion.div>
+						</div>
 					</div>
 				</div>
 

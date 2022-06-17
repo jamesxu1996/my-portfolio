@@ -119,12 +119,13 @@
 	}
 
 	div:nth-child(1) {
+        margin-left: 2.5rem;
 		width: 100px;
 		height: 100px;
 	}
 
 	div:nth-child(2) {
-		margin: 1.75rem;
+        margin-left: 6.5rem;
 		width: 150px;
 		height: 150px;
 	}
@@ -135,7 +136,7 @@
 	}
 
 	div:nth-child(4) {
-		margin: 1.75rem;
+        margin-left: 8rem;
 		width: 70px;
 		height: 70px;
 	}
@@ -146,7 +147,7 @@
 	}
 
 	div:nth-child(6) {
-		margin: 2rem;
+        margin-left: 7rem;
 		width: 110px;
 		height: 110px;
 	}
@@ -157,7 +158,7 @@
 	}
 
 	div:nth-child(8) {
-		margin: 1.25rem;
+        margin-left: 5rem;
 		width: 140px;
 		height: 140px;
 	}

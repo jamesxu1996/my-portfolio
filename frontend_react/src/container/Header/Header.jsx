@@ -38,7 +38,11 @@ const Header = () => (
 								}}
 								className="app__header-img"
 							>
-								<img  className="self" src={images.self} alt="self_bg" />
+								<img
+									className="self"
+									src={images.self}
+									alt="self_bg"
+								/>
 							</motion.div>
 						</div>
 					</div>
@@ -74,13 +78,8 @@ const Header = () => (
 			{[
 				images.react,
 				images.javascript,
-				images.node,
-				images.mongo,
 				images.ruby,
 				images.rails,
-				images.css,
-				images.html,
-				images.sass,
 			].map((circle, index) => (
 				<div className="circle-cmp app__flex" key={`circle-${index}`}>
 					<img src={circle} alt="profile_bg" />
@@ -90,4 +89,4 @@ const Header = () => (
 	</div>
 );
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, "home");

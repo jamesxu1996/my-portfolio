@@ -25,7 +25,12 @@ const Header = () => (
 		>
 			<div className="app__header-badge">
 				<div className="badge-cmp app__flex">
-					<span>👋</span>
+					<motion.div
+						transition={{ repeat: 1, duration: 1 }}
+						animate={{ rotate: [0, 100, 100, 0] }}
+					>
+						<span>👋</span>
+					</motion.div>
 					<div style={{ marginLeft: 20 }}>
 						<p className="p-text">Hello, I am</p>
 						<h1 className="head-text">James Xu</h1>
@@ -36,17 +41,17 @@ const Header = () => (
 									duration: 0.5,
 									delayChildren: 0.5,
 								}}
-								className="app__header-img"
 							>
-								<img
-									className="self"
-									src={images.self}
-									alt="self_bg"
-								/>
 							</motion.div>
 						</div>
 					</div>
 				</div>
+
+					<div className="tag-cmp app__flex">
+						<div className="app__header-img">
+							<img className="self" src={images.self} alt="self_bg" />
+						</div>
+					</div>	
 
 				<div className="tag-cmp app__flex">
 					<p className="p-text">Aspiring Full-Stack Developer</p>
@@ -75,16 +80,16 @@ const Header = () => (
 			whileInView={scaleVariants.whileInView}
 			className="app__header-circles"
 		>
-			{[
-				images.react,
-				images.javascript,
-				images.ruby,
-				images.rails,
-			].map((circle, index) => (
-				<div className="circle-cmp app__flex" key={`circle-${index}`}>
-					<img src={circle} alt="profile_bg" />
-				</div>
-			))}
+			{[images.react, images.javascript, images.ruby, images.rails].map(
+				(circle, index) => (
+					<div
+						className="circle-cmp app__flex"
+						key={`circle-${index}`}
+					>
+						<img src={circle} alt="profile_bg" />
+					</div>
+				)
+			)}
 		</motion.div>
 	</div>
 );

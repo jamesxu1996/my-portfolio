@@ -7,6 +7,11 @@ import { urlFor, client } from "../../client";
 
 const About = () => {
 	const [abouts, setAbouts] = useState([]);
+	
+	// Sort app__profile-items by numerical title
+	abouts.sort(function (a, b) {
+		return a.title - b.title;
+	});
 
 	useEffect(() => {
 		const query = '*[_type == "abouts"]';
@@ -20,7 +25,7 @@ const About = () => {
 				Analyse Problems.
 				<span> Create Solutions. </span>
 				<br />
-				Analyse Solutions.<span> Learn.  </span>
+				Analyse Solutions.<span> Learn. </span>
 			</h2>
 
 			<div className="app__profiles">
@@ -46,4 +51,4 @@ const About = () => {
 	);
 };
 
-export default AppWrap(About, 'about');
+export default AppWrap(About, "about");
